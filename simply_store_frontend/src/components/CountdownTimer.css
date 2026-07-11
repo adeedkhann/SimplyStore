@@ -1,0 +1,39 @@
+.countdown-timer {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  background: transparent;
+}
+
+.time-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: var(--clr-text-primary);
+  border-radius: var(--radius-sm);
+  width: 44px;
+  height: 44px;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+}
+
+.time-num {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.time-lbl {
+  font-size: 8px;
+  font-weight: 700;
+  color: var(--clr-text-secondary);
+}
+
+.time-colon {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: white;
+  margin-top: -12px;
+}

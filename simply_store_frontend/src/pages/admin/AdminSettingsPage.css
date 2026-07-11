@@ -1,0 +1,10 @@
+.asp-page{display:flex;flex-direction:column;gap:var(--space-xl);}
+.asp-commission-section{display:flex;flex-direction:column;gap:var(--space-md);background:var(--clr-surface);border-radius:var(--radius-md);padding:var(--space-lg);margin-bottom:var(--space-lg);}
+.asp-commission-header{display:flex;justify-content:space-between;align-items:flex-start;}
+.asp-commission-info{display:flex;flex-direction:column;gap:4px;}
+.asp-commission-desc{font-size:var(--text-sm);color:var(--clr-text-secondary);}
+.asp-commission-value{font-family:var(--font-display);font-size:32px;font-weight:800;color:var(--clr-admin);letter-spacing:-1px;}
+.asp-slider{-webkit-appearance:none;width:100%;height:6px;border-radius:var(--radius-full);background:linear-gradient(to right,var(--clr-admin) 0%,var(--clr-admin) calc(var(--val)*1%),var(--clr-border) calc(var(--val)*1%));outline:none;cursor:pointer;}
+.asp-slider::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:var(--radius-full);background:var(--clr-admin);box-shadow:var(--shadow-md);cursor:pointer;}
+.asp-slider-labels{display:flex;justify-content:space-between;font-size:var(--text-xs);color:var(--clr-text-muted);}
+.asp-section-title{font-family:var(--font-display);font-size:var(--text-md);font-weight:700;color:var(--clr-text-primary);margin-bottom:var(--space-md);}

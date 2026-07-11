@@ -1,0 +1,258 @@
+.account-page {
+  padding-top: calc(var(--navbar-height) + var(--space-xl));
+  padding-bottom: var(--space-3xl);
+}
+
+.profile-header-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--clr-border);
+  padding: var(--space-xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-xl);
+}
+
+.profile-header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.profile-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  border: 2px solid var(--clr-border-light);
+}
+
+.profile-info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.profile-name {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--clr-text-primary);
+}
+
+.profile-join-date {
+  font-size: var(--text-xs);
+  color: var(--clr-text-muted);
+  font-weight: 500;
+}
+
+.profile-badges {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: 4px;
+}
+
+.edit-profile-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+/* Split layout */
+.account-split-layout {
+  display: flex;
+  gap: var(--space-2xl);
+  align-items: flex-start;
+}
+
+.account-sidebar-nav {
+  width: 220px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  background: var(--clr-surface);
+  padding: var(--space-md);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--clr-border);
+}
+
+.account-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 10px 14px;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--clr-text-secondary);
+  border-radius: var(--radius-md);
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.account-nav-btn:hover {
+  background: var(--clr-border-light);
+  color: var(--clr-primary);
+}
+
+.account-nav-btn.active {
+  background: var(--clr-primary);
+  color: white;
+}
+
+.account-content-detail {
+  flex: 1;
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--clr-border);
+  padding: var(--space-xl);
+}
+
+.panel-title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--clr-text-primary);
+  margin-bottom: var(--space-lg);
+}
+
+.personal-info-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.form-row-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.relative-wrap {
+  position: relative;
+}
+
+.verified-input {
+  padding-right: 40px;
+}
+
+.input-check-icon {
+  position: absolute;
+  right: 14px;
+  bottom: 13px;
+  color: var(--clr-accent);
+}
+
+.save-form-btn {
+  margin-top: var(--space-md);
+  align-self: flex-start;
+}
+
+/* Addresses list cards */
+.addresses-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.add-address-link {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--clr-primary);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.add-address-link:hover {
+  text-decoration: underline;
+}
+
+.saved-addresses-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.address-card {
+  border: 1.5px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-lg);
+  background: white;
+}
+
+.address-card.default {
+  border-color: var(--clr-primary);
+  background: rgba(75, 61, 227, 0.02);
+}
+
+.address-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-sm);
+}
+
+.address-name-lbl {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--clr-text-primary);
+}
+
+.address-badge {
+  font-size: 8px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+}
+
+.address-details-text {
+  font-size: var(--text-xs);
+  color: var(--clr-text-secondary);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .account-split-layout {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+  .account-sidebar-nav {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: var(--space-sm);
+    gap: var(--space-xs);
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+  }
+  .account-sidebar-nav::-webkit-scrollbar {
+    display: none; /* Hide scrollbar Chrome/Safari */
+  }
+  .account-nav-btn {
+    flex-shrink: 0;
+    padding: 8px 12px;
+    gap: var(--space-sm);
+  }
+  .account-content-detail {
+    padding: var(--space-lg);
+  }
+  .form-row-split {
+    grid-template-columns: 1fr;
+  }
+  .saved-addresses-grid {
+    grid-template-columns: 1fr;
+  }
+  .profile-header-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+  }
+}
